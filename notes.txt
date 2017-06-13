@@ -1,6 +1,6 @@
 responsivegridsystem.com
 
 
-DEV ICONS: 
+DEV ICONS:
 
 http://konpa.github.io/devicon/
