@@ -136,12 +136,12 @@ let hideOnClickOff = (e, el1, el2, ...args) => {
 
   $(document).click ( (e) => {
     if (
-      !($('.contact-me-menu').is(e.target)) &&
-      ($('.contact-me-menu').has(e.target).length === 0)
+      !($('.contact-menu').is(e.target)) &&
+      ($('.contact-menu').has(e.target).length === 0)
       && !($('.contact-li').is(e.target))
       && ($('.contact-li').has(e.target).length === 0)
     ) {
-      $('.contact-me-menu').hide();
+      $('.contact-menu').hide();
       $('.contact-li').removeClass("menu-item-shown");
     }
   });

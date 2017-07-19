@@ -1,0 +1,146 @@
+
+.contact-li {
+  position: relative;
+}
+
+.contact-menu {
+  position: absolute;
+  margin-top: 20px;
+  background-color: rgba(49, 128, 197, 0.2);
+  border-radius: 0px 0px 3px 3px;
+  display: none;
+}
+
+.contact-li li {
+  padding-right: 20px;
+  width:163.75px;
+
+}
+
+.skills-menu {
+  margin: auto;
+  display: none;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-family: "Libre Baskerville", sans-serif;
+  background-color: rgba(49, 128, 197, 0.2);
+  padding: 40px 20px;
+  border-radius: 20px;
+}
+
+.skills-container ul {
+  display: flex;
+}
+
+.skills-container div {
+  padding: 20px 0px;
+}
+
+.skills-container i {
+  font-size: 80px;
+  margin: 30px;
+}
+
+.projects-menu {
+  width: 700px;
+  margin: auto;
+  display: none;
+}
+
+.projects-menu img {
+  width: 100%;
+}
+
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  font-family: "Libre Baskerville", sans-serif;
+  background-color: rgba(49, 128, 197, 0.2);
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.project {
+  width: 233.3333px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.project:nth-child(2) {
+  margin: 0px 60px;
+}
+
+.track-header {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*BioRhyme font?*/
+
+.quarry-header {
+  padding-top: 10px;
+  font-family: 'Arbutus Slab', serif;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@font-face {
+    font-family: 'Tetris1';
+    src:url('../fonts/tetris/Tetris1.ttf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tetris-header {
+  font-family: 'Tetris1';
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.project p {
+  display: none;
+}
+
+.project-box {
+  width: 700px;
+  margin: auto;
+  display: none;
+}
+
+.project-box img {
+  width: 100%;
+}
+
+.project-text {
+  margin-left: 60px;
+  width: 381px;
+}
+
+
+.project-links {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+
+.project-box a {
+  border-bottom: 1px dotted white;
+  margin: 20px;
+}
+
+.projects-back {
+  text-align: center;
+}
