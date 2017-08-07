@@ -2,15 +2,16 @@
   font-family: 'Cutive Mono', monospace;
   font-size: 50px; }
 
-.page1 header {
+.header-container {
+  display: flex;
+  flex-direction: column;
   color: white;
-  position: relative;
-  margin: 20px 20px 20px 20px; }
+  position: relative; }
 
 .header-line1 {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0px; }
+  margin: 20px 20px 0px 20px; }
 
 .statement {
   font-family: 'Cutive Mono', monospace;
@@ -20,11 +21,9 @@
   left: 20%;
   display: flex; }
 
-.main-menu-container {
-  position: relative; }
-
 .main-menu-button {
-  position: relative; }
+  position: relative;
+  display: none; }
 
 .bars-container {
   width: 30px;
@@ -85,32 +84,29 @@
   display: none; }
 
 .skills-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: auto;
   font-family: "Libre Baskerville", sans-serif;
   background-color: rgba(49, 128, 197, 0.2);
-  padding: 40px 20px;
-  border-radius: 20px; }
+  padding: 20px 20px;
+  border-radius: 20px;
+  width: 700px;
+  text-align: center; }
 
-.skills-container ul {
-  display: flex; }
-
-.skills-container div {
-  padding: 20px 0px; }
+.skills-container li {
+  display: inline; }
 
 .skills-container i {
   font-size: 80px;
-  margin: 30px; }
+  padding: 0px 27px;
+  line-height: 1.5; }
 
 .projects-menu {
-  width: 700px;
   margin: auto;
   display: none; }
 
-.projects-menu img {
-  width: 100%; }
+.project img {
+  width: 150px;
+  height: 88px; }
 
 .projects-container {
   display: flex;
@@ -122,9 +118,8 @@
   border-radius: 20px; }
 
 .project {
-  width: 233.3333px;
-  box-sizing: border-box;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
 
 .project:nth-child(2) {
   margin: 0px 60px; }
@@ -137,11 +132,9 @@
 
 /*BioRhyme font?*/
 .quarry-header {
-  padding-top: 10px;
   font-family: 'Arbutus Slab', serif;
   font-weight: 500;
   font-size: 35px;
-  text-align: center;
   letter-spacing: 0.1em; }
 
 @font-face {
@@ -153,23 +146,19 @@
   font-family: 'Tetris1';
   text-transform: uppercase;
   font-size: 35px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center; }
 
 .project p {
   display: none; }
 
 .project-box {
-  width: 700px;
   margin: auto;
   display: none; }
 
-.project-box img {
-  width: 100%; }
-
 .project-text {
   margin-left: 60px;
-  width: 381px; }
+  width: 300px; }
 
 .project-links {
   text-align: center;
@@ -219,5 +208,43 @@ button:hover {
   font-family: 'Cutive Mono', monospace;
   text-transform: lowercase;
   font-size: 40px; }
+
+@media screen and (max-width: 762px) {
+  .main-menu-button {
+    display: inline; }
+
+  .main-menu-items {
+    text-align: center;
+    display: inline;
+    background-color: rgba(49, 128, 197, 0.2);
+    margin-top: 20px; }
+
+  .projects-container {
+    flex-direction: column; }
+
+  .page1 h1 {
+    font-size: 30px; }
+
+  .page1 footer {
+    font-size: 30px; }
+
+  .project:nth-child(2) {
+    margin: 20px 0px; }
+
+  .project-text {
+    margin: auto; }
+
+  .project {
+    margin: auto; }
+
+  .project-box {
+    margin: 0px; }
+
+  .project-box .projects-container {
+    padding: 60px 0px; }
+
+  .skills-container {
+    width: 100%;
+    padding: 20px 0px; } }
 
 /*# sourceMappingURL=main.css.map */
