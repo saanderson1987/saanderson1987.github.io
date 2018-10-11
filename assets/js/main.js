@@ -35,6 +35,21 @@ $(document).ready( () => {
     $('.tetris').toggle();
   });
 
+  $('.music-flashcards-link').click( () => {
+    $('.projects-menu').toggle();
+    $('.music-flashcards').toggle();
+  });
+
+  $('.taag-link').click( () => {
+    $('.projects-menu').toggle();
+    $('.taag').toggle();
+  });
+
+  $('.text-annotator-link').click( () => {
+    $('.projects-menu').toggle();
+    $('.text-annotator').toggle();
+  });
+
   $(document).click ( (e) => {
     if (
       !($('.tetris').is(e.target)) &&
