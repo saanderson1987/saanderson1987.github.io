@@ -170,7 +170,7 @@ button:hover {
 .projects-menu {
   width: 700px;
   margin: auto;
-  /* display: none; */
+  display: none;
 }
 
 .projects-menu img {
