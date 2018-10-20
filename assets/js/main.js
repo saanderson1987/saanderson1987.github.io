@@ -16,7 +16,7 @@ $(document).ready( () => {
   });
 
   $('.projects-back').click( () => {
-    $('.project-box').toggle();
+    $('.project-box').hide();
     $('.projects-menu').toggle();
   });
 
@@ -33,6 +33,26 @@ $(document).ready( () => {
   $('.tetris-link').click( () => {
     $('.projects-menu').toggle();
     $('.tetris').toggle();
+  });
+
+  $('.music-flashcards-link').click( () => {
+    $('.projects-menu').toggle();
+    $('.music-flashcards').toggle();
+  });
+
+  $('.taag-link').click( () => {
+    $('.projects-menu').toggle();
+    $('.taag').toggle();
+  });
+
+  $('.text-annotator-link').click( () => {
+    $('.projects-menu').toggle();
+    $('.text-annotator').toggle();
+  });
+
+  $('.tic-tac-toe-link').click( () => {
+    $('.projects-menu').toggle();
+    $('.tic-tac-toe').toggle();
   });
 
   $(document).click ( (e) => {
@@ -68,6 +88,51 @@ $(document).ready( () => {
     }
   });
 
+  $(document).click ( (e) => {
+    if (
+      !($('.taag').is(e.target)) &&
+      ($('.taag').has(e.target).length === 0)
+      && !($('.taag-link').is(e.target))
+      && ($('.taag-link').has(e.target).length === 0)
+    ) {
+      $('.taag').hide();
+    }
+  });
+
+  $(document).click ( (e) => {
+    if (
+      !($('.tic-tac-toe').is(e.target)) &&
+      ($('.tic-tac-toe').has(e.target).length === 0)
+      && !($('.tic-tac-toe-link').is(e.target))
+      && ($('.tic-tac-toe-link').has(e.target).length === 0)
+    ) {
+      $('.tic-tac-toe').hide();
+    }
+  });
+
+  $(document).click ( (e) => {
+    if (
+      !($('.music-flashcards').is(e.target)) &&
+      ($('.music-flashcards').has(e.target).length === 0)
+      && !($('.music-flashcards-link').is(e.target))
+      && ($('.music-flashcards-link').has(e.target).length === 0)
+    ) {
+      $('.music-flashcards').hide();
+    }
+  });
+
+  $(document).click ( (e) => {
+    if (
+      !($('.text-annotator').is(e.target)) &&
+      ($('.text-annotator').has(e.target).length === 0)
+      && !($('.text-annotator-link').is(e.target))
+      && ($('.text-annotator-link').has(e.target).length === 0)
+    ) {
+      $('.text-annotator').hide();
+    }
+  });
+
+  
   $(document).click ( (e) => {
     if (
       !($('.projects-menu').is(e.target)) &&
